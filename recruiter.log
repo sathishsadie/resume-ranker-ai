@@ -1,0 +1,260 @@
+2025-04-15 18:31:37,564 - app - WARNING - LLM initialization attempt 1 failed: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull deepseek-1.5b`.
+2025-04-15 18:31:39,608 - app - WARNING - LLM initialization attempt 2 failed: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull deepseek-1.5b`.
+2025-04-15 18:31:41,653 - app - WARNING - LLM initialization attempt 3 failed: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull deepseek-1.5b`.
+2025-04-15 18:31:41,654 - app - ERROR - Max retries reached for LLM initialization
+2025-04-15 18:32:31,854 - app - INFO - LLM initialized successfully
+2025-04-15 18:32:45,318 - app - ERROR - Database load failed: 'str' object has no attribute 'exists'
+2025-04-15 22:51:24,897 - app - INFO - LLM initialized successfully
+2025-04-15 22:51:45,761 - app - ERROR - Database load failed: 'str' object has no attribute 'exists'
+2025-04-15 22:54:58,527 - app - ERROR - Database load failed: 'str' object has no attribute 'exists'
+2025-04-15 22:55:09,055 - app - INFO - LLM initialized successfully
+2025-04-15 22:55:09,072 - app - ERROR - Database load failed: 'str' object has no attribute 'exists'
+2025-04-15 22:57:19,871 - app - ERROR - Database load failed: 'str' object has no attribute 'exists'
+2025-04-15 22:57:39,385 - app - ERROR - Database load failed: 'str' object has no attribute 'exists'
+2025-04-15 22:59:53,670 - app - ERROR - Database load failed: 'str' object has no attribute 'exists'
+2025-04-15 22:59:58,043 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-15 23:00:01,566 - app - INFO - LLM initialized successfully
+2025-04-15 23:00:01,578 - app - ERROR - Database load failed: 'str' object has no attribute 'exists'
+2025-04-15 23:00:13,013 - app - ERROR - Database load failed: 'str' object has no attribute 'exists'
+2025-04-15 23:00:17,461 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-15 23:00:20,745 - app - INFO - LLM initialized successfully
+2025-04-15 23:00:46,853 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-15 23:00:50,417 - app - INFO - LLM initialized successfully
+2025-04-16 15:50:52,913 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 15:50:55,272 - app - INFO - LLM initialized successfully
+2025-04-16 15:54:43,304 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 15:54:46,866 - app - INFO - LLM initialized successfully
+2025-04-16 16:08:49,907 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 16:08:50,334 - app - INFO - LLM initialized successfully
+2025-04-16 16:18:38,852 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 16:18:39,309 - app - INFO - LLM initialized successfully
+2025-04-16 16:19:31,705 - app - INFO - Received file: sathish_g_11 (13).pdf, size: 167776
+2025-04-16 16:19:31,707 - app - INFO - Processing resume: sathish_g_11 (13).pdf
+2025-04-16 16:19:33,810 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 16:21:06,386 - app - INFO - Received file: sathish_g_11 (9).pdf, size: 165618
+2025-04-16 16:21:06,386 - app - INFO - Processing resume: sathish_g_11 (9).pdf
+2025-04-16 16:21:08,342 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 16:21:32,816 - app - INFO - Received file: sathish_g_11 (10).pdf, size: 43567
+2025-04-16 16:21:32,816 - app - INFO - Processing resume: sathish_g_11 (10).pdf
+2025-04-16 16:21:33,175 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 16:21:47,954 - app - INFO - Received file: sathish_g_11 (11).pdf, size: 55279
+2025-04-16 16:21:47,956 - app - INFO - Processing resume: sathish_g_11 (11).pdf
+2025-04-16 16:21:48,336 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 16:22:10,167 - app - INFO - Received file: sathish_g_11 (12).pdf, size: 167848
+2025-04-16 16:22:10,167 - app - INFO - Processing resume: sathish_g_11 (12).pdf
+2025-04-16 16:22:10,895 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 16:22:31,514 - app - INFO - Received file: sathish_g_11 (13).pdf, size: 167776
+2025-04-16 16:22:31,514 - app - INFO - Processing resume: sathish_g_11 (13).pdf
+2025-04-16 16:22:32,312 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 16:22:47,792 - app - WARNING - Score extraction error: could not convert string to float: '** [0-100]'
+2025-04-16 16:48:35,857 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 16:48:36,158 - app - INFO - LLM initialized successfully
+2025-04-16 17:26:00,351 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 17:26:00,706 - app - INFO - LLM initialized successfully
+2025-04-16 17:39:34,375 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 17:39:34,678 - app - INFO - LLM initialized successfully
+2025-04-16 17:43:59,424 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 17:43:59,864 - app - INFO - LLM initialized successfully
+2025-04-16 17:47:02,726 - app - ERROR - Database load failed: Expecting value: line 1 column 1 (char 0)
+2025-04-16 17:47:33,672 - app - ERROR - Database load failed: Expecting value: line 1 column 1 (char 0)
+2025-04-16 17:47:33,672 - app - INFO - Received file: sathish_g_11 (13).pdf, size: 167776
+2025-04-16 17:47:33,672 - app - INFO - Processing resume: sathish_g_11 (13).pdf
+2025-04-16 17:47:34,417 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 17:47:43,313 - app - WARNING - Score extraction error: could not convert string to float: '** 90'
+2025-04-16 17:50:36,181 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 17:50:36,547 - app - INFO - LLM initialized successfully
+2025-04-16 17:51:24,521 - app - INFO - Received file: sathish_g_11 (13).pdf, size: 167776
+2025-04-16 17:51:24,523 - app - INFO - Processing resume: sathish_g_11 (13).pdf
+2025-04-16 17:51:25,172 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 17:51:33,041 - app - WARNING - Score extraction error: could not convert string to float: '** 90'
+2025-04-16 17:57:03,618 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 17:57:03,909 - app - INFO - LLM initialized successfully
+2025-04-16 17:57:05,803 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 17:57:06,079 - app - INFO - LLM initialized successfully
+2025-04-16 17:57:38,532 - app - INFO - Received file: sathish_g_11 (13).pdf, size: 167776
+2025-04-16 17:57:38,532 - app - INFO - Processing resume: sathish_g_11 (13).pdf
+2025-04-16 17:57:39,264 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 17:57:47,054 - app - WARNING - Score extraction error: could not convert string to float: '** 85'
+2025-04-16 18:00:27,697 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 18:00:27,989 - app - INFO - LLM initialized successfully
+2025-04-16 18:00:29,992 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 18:00:30,446 - app - INFO - LLM initialized successfully
+2025-04-16 18:01:20,701 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 18:01:21,143 - app - INFO - LLM initialized successfully
+2025-04-16 18:01:35,998 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 18:01:36,343 - app - INFO - LLM initialized successfully
+2025-04-16 18:02:38,455 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 18:02:38,918 - app - INFO - LLM initialized successfully
+2025-04-16 18:03:23,106 - app - INFO - Received file: sathish_g_11 (9).pdf, size: 165618
+2025-04-16 18:03:23,107 - app - INFO - Processing resume: sathish_g_11 (9).pdf
+2025-04-16 18:03:23,697 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 18:03:30,655 - app - INFO - Received file: sathish_g_11 (10).pdf, size: 43567
+2025-04-16 18:03:30,655 - app - INFO - Processing resume: sathish_g_11 (10).pdf
+2025-04-16 18:03:30,822 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 18:03:40,160 - app - INFO - Received file: sathish_g_11 (11).pdf, size: 55279
+2025-04-16 18:03:40,160 - app - INFO - Processing resume: sathish_g_11 (11).pdf
+2025-04-16 18:03:40,390 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 18:03:48,176 - app - INFO - Received file: sathish_g_11 (12).pdf, size: 167848
+2025-04-16 18:03:48,177 - app - INFO - Processing resume: sathish_g_11 (12).pdf
+2025-04-16 18:03:48,558 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 18:03:57,018 - app - INFO - Received file: sathish_g_11 (13).pdf, size: 167776
+2025-04-16 18:03:57,018 - app - INFO - Processing resume: sathish_g_11 (13).pdf
+2025-04-16 18:03:57,348 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 18:04:38,076 - app - ERROR - Database load failed: Expecting value: line 1 column 1 (char 0)
+2025-04-16 18:07:39,845 - app - ERROR - Database load failed: Expecting value: line 1 column 1 (char 0)
+2025-04-16 18:07:40,161 - app - ERROR - Database load failed: Expecting value: line 1 column 1 (char 0)
+2025-04-16 18:07:42,392 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 18:07:42,788 - app - INFO - LLM initialized successfully
+2025-04-16 18:07:42,796 - app - INFO - Resetting resumes_db.json on startup...
+2025-04-16 18:07:42,797 - app - INFO - resumes_db.json has been cleared.
+2025-04-16 18:07:44,641 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 18:07:45,066 - app - INFO - LLM initialized successfully
+2025-04-16 18:07:45,073 - app - INFO - Resetting resumes_db.json on startup...
+2025-04-16 18:07:45,074 - app - INFO - resumes_db.json has been cleared.
+2025-04-16 18:08:20,166 - app - INFO - Received file: sathish_g_11 (9).pdf, size: 165618
+2025-04-16 18:08:20,166 - app - INFO - Processing resume: sathish_g_11 (9).pdf
+2025-04-16 18:08:20,737 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 18:08:27,616 - app - INFO - Received file: sathish_g_11 (10).pdf, size: 43567
+2025-04-16 18:08:27,616 - app - INFO - Processing resume: sathish_g_11 (10).pdf
+2025-04-16 18:08:27,780 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 18:08:37,166 - app - INFO - Received file: sathish_g_11 (11).pdf, size: 55279
+2025-04-16 18:08:37,166 - app - INFO - Processing resume: sathish_g_11 (11).pdf
+2025-04-16 18:08:37,396 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 18:08:45,212 - app - INFO - Received file: sathish_g_11 (12).pdf, size: 167848
+2025-04-16 18:08:45,212 - app - INFO - Processing resume: sathish_g_11 (12).pdf
+2025-04-16 18:08:45,587 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 18:08:54,102 - app - INFO - Received file: sathish_g_11 (13).pdf, size: 167776
+2025-04-16 18:08:54,102 - app - INFO - Processing resume: sathish_g_11 (13).pdf
+2025-04-16 18:08:54,441 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 18:09:52,676 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-16 18:09:52,969 - app - INFO - LLM initialized successfully
+2025-04-16 18:09:52,979 - app - INFO - Resetting resumes_db.json on startup...
+2025-04-16 18:09:52,981 - app - INFO - resumes_db.json has been cleared.
+2025-04-17 16:48:33,633 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 16:48:34,050 - app - INFO - LLM initialized successfully
+2025-04-17 16:48:34,060 - app - INFO - Resetting resumes_db.json on startup...
+2025-04-17 16:48:34,061 - app - INFO - resumes_db.json has been cleared.
+2025-04-17 16:50:45,770 - app - INFO - Received file: sathish_g_11 (9).pdf, size: 165618
+2025-04-17 16:50:45,770 - app - INFO - Processing resume: sathish_g_11 (9).pdf
+2025-04-17 16:50:47,741 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 16:51:01,702 - app - INFO - Received file: sathish_g_11 (10).pdf, size: 43567
+2025-04-17 16:51:01,702 - app - INFO - Processing resume: sathish_g_11 (10).pdf
+2025-04-17 16:51:01,924 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 16:51:12,093 - app - INFO - Received file: sathish_g_11 (11).pdf, size: 55279
+2025-04-17 16:51:12,093 - app - INFO - Processing resume: sathish_g_11 (11).pdf
+2025-04-17 16:51:12,418 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 16:51:23,882 - app - INFO - Received file: sathish_g_11 (12).pdf, size: 167848
+2025-04-17 16:51:23,883 - app - INFO - Processing resume: sathish_g_11 (12).pdf
+2025-04-17 16:51:24,421 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 16:51:39,422 - app - INFO - Received file: sathish_g_11 (13).pdf, size: 167776
+2025-04-17 16:51:39,422 - app - INFO - Processing resume: sathish_g_11 (13).pdf
+2025-04-17 16:51:39,908 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 16:57:37,600 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 16:57:38,024 - app - INFO - LLM initialized successfully
+2025-04-17 16:57:38,039 - app - INFO - Resetting resumes_db.json on startup...
+2025-04-17 16:57:38,040 - app - INFO - resumes_db.json has been cleared.
+2025-04-17 16:58:03,694 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 16:58:04,515 - app - INFO - LLM initialized successfully
+2025-04-17 16:58:04,524 - app - INFO - Resetting resumes_db.json on startup...
+2025-04-17 16:58:04,531 - app - INFO - resumes_db.json has been cleared.
+2025-04-17 16:58:09,096 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 16:58:09,662 - app - INFO - LLM initialized successfully
+2025-04-17 16:58:09,672 - app - INFO - Resetting resumes_db.json on startup...
+2025-04-17 16:58:09,672 - app - INFO - resumes_db.json has been cleared.
+2025-04-17 16:58:15,424 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 16:58:15,871 - app - INFO - LLM initialized successfully
+2025-04-17 16:58:15,878 - app - INFO - Resetting resumes_db.json on startup...
+2025-04-17 16:58:15,887 - app - INFO - resumes_db.json has been cleared.
+2025-04-17 16:58:30,175 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 16:58:30,740 - app - INFO - LLM initialized successfully
+2025-04-17 16:58:30,754 - app - INFO - Resetting resumes_db.json on startup...
+2025-04-17 16:58:30,759 - app - INFO - resumes_db.json has been cleared.
+2025-04-17 16:58:36,247 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 16:58:36,745 - app - INFO - LLM initialized successfully
+2025-04-17 16:58:36,754 - app - INFO - Resetting resumes_db.json on startup...
+2025-04-17 16:58:36,756 - app - INFO - resumes_db.json has been cleared.
+2025-04-17 16:58:48,660 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 16:58:49,225 - app - INFO - LLM initialized successfully
+2025-04-17 16:58:49,238 - app - INFO - Resetting resumes_db.json on startup...
+2025-04-17 16:58:49,240 - app - INFO - resumes_db.json has been cleared.
+2025-04-17 16:58:54,739 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 16:58:55,235 - app - INFO - LLM initialized successfully
+2025-04-17 16:58:55,247 - app - INFO - Resetting resumes_db.json on startup...
+2025-04-17 16:58:55,251 - app - INFO - resumes_db.json has been cleared.
+2025-04-17 16:59:02,607 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 16:59:03,224 - app - INFO - LLM initialized successfully
+2025-04-17 16:59:03,236 - app - INFO - Resetting resumes_db.json on startup...
+2025-04-17 16:59:03,236 - app - INFO - resumes_db.json has been cleared.
+2025-04-17 16:59:10,397 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 16:59:10,840 - app - INFO - LLM initialized successfully
+2025-04-17 16:59:10,855 - app - INFO - Resetting resumes_db.json on startup...
+2025-04-17 16:59:10,856 - app - INFO - resumes_db.json has been cleared.
+2025-04-17 16:59:22,656 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 16:59:23,220 - app - INFO - LLM initialized successfully
+2025-04-17 16:59:23,238 - app - INFO - Resetting resumes_db.json on startup...
+2025-04-17 16:59:23,240 - app - INFO - resumes_db.json has been cleared.
+2025-04-17 16:59:35,542 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 16:59:36,110 - app - INFO - LLM initialized successfully
+2025-04-17 16:59:36,126 - app - INFO - Resetting resumes_db.json on startup...
+2025-04-17 16:59:36,128 - app - INFO - resumes_db.json has been cleared.
+2025-04-17 16:59:39,331 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 16:59:39,880 - app - INFO - LLM initialized successfully
+2025-04-17 16:59:39,893 - app - INFO - Resetting resumes_db.json on startup...
+2025-04-17 16:59:39,893 - app - INFO - resumes_db.json has been cleared.
+2025-04-17 17:00:47,238 - app - INFO - Received file: sathish_g_11 (9).pdf, size: 165618
+2025-04-17 17:00:47,238 - app - INFO - Processing resume: sathish_g_11 (9).pdf
+2025-04-17 17:00:49,174 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 17:01:06,799 - app - INFO - Received file: sathish_g_11 (10).pdf, size: 43567
+2025-04-17 17:01:06,799 - app - INFO - Processing resume: sathish_g_11 (10).pdf
+2025-04-17 17:01:07,053 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 17:01:19,057 - app - INFO - Received file: sathish_g_11 (11).pdf, size: 55279
+2025-04-17 17:01:19,057 - app - INFO - Processing resume: sathish_g_11 (11).pdf
+2025-04-17 17:01:19,378 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 17:01:32,696 - app - INFO - Received file: sathish_g_11 (12).pdf, size: 167848
+2025-04-17 17:01:32,696 - app - INFO - Processing resume: sathish_g_11 (12).pdf
+2025-04-17 17:01:33,247 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 17:01:48,772 - app - INFO - Received file: sathish_g_11 (13).pdf, size: 167776
+2025-04-17 17:01:48,772 - app - INFO - Processing resume: sathish_g_11 (13).pdf
+2025-04-17 17:01:49,437 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 17:02:47,314 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 17:02:48,068 - app - INFO - LLM initialized successfully
+2025-04-17 17:02:48,079 - app - INFO - Resetting resumes_db.json on startup...
+2025-04-17 17:02:48,084 - app - INFO - resumes_db.json has been cleared.
+2025-04-17 17:02:51,142 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 17:02:51,744 - app - INFO - LLM initialized successfully
+2025-04-17 17:02:51,754 - app - INFO - Resetting resumes_db.json on startup...
+2025-04-17 17:02:51,755 - app - INFO - resumes_db.json has been cleared.
+2025-04-17 17:03:13,772 - app - INFO - Received file: sathish_g_11 (9).pdf, size: 165618
+2025-04-17 17:03:13,772 - app - INFO - Processing resume: sathish_g_11 (9).pdf
+2025-04-17 17:03:15,657 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 17:03:25,594 - app - INFO - Received file: sathish_g_11 (10).pdf, size: 43567
+2025-04-17 17:03:25,594 - app - INFO - Processing resume: sathish_g_11 (10).pdf
+2025-04-17 17:03:25,830 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 17:03:38,885 - app - INFO - Received file: sathish_g_11 (11).pdf, size: 55279
+2025-04-17 17:03:38,886 - app - INFO - Processing resume: sathish_g_11 (11).pdf
+2025-04-17 17:03:39,216 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 17:03:50,873 - app - INFO - Received file: sathish_g_11 (12).pdf, size: 167848
+2025-04-17 17:03:50,874 - app - INFO - Processing resume: sathish_g_11 (12).pdf
+2025-04-17 17:03:51,399 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 17:04:03,631 - app - INFO - Received file: sathish_g_11 (13).pdf, size: 167776
+2025-04-17 17:04:03,632 - app - INFO - Processing resume: sathish_g_11 (13).pdf
+2025-04-17 17:04:04,093 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 21:59:49,673 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 21:59:50,168 - app - INFO - LLM initialized successfully
+2025-04-17 21:59:50,191 - app - INFO - Resetting resumes_db.json on startup...
+2025-04-17 21:59:50,193 - app - INFO - resumes_db.json has been cleared.
+2025-04-17 22:02:03,637 - app - INFO - Received file: sathish_g_11 (9).pdf, size: 165618
+2025-04-17 22:02:03,639 - app - INFO - Processing resume: sathish_g_11 (9).pdf
+2025-04-17 22:02:05,674 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 22:02:19,174 - app - INFO - Received file: sathish_g_11 (10).pdf, size: 43567
+2025-04-17 22:02:19,175 - app - INFO - Processing resume: sathish_g_11 (10).pdf
+2025-04-17 22:02:19,428 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 22:02:30,692 - app - INFO - Received file: sathish_g_11 (11).pdf, size: 55279
+2025-04-17 22:02:30,692 - app - INFO - Processing resume: sathish_g_11 (11).pdf
+2025-04-17 22:02:31,021 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 22:02:44,662 - app - INFO - Received file: sathish_g_11 (12).pdf, size: 167848
+2025-04-17 22:02:44,662 - app - INFO - Processing resume: sathish_g_11 (12).pdf
+2025-04-17 22:02:45,208 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-04-17 22:02:58,746 - app - INFO - Received file: sathish_g_11 (13).pdf, size: 167776
+2025-04-17 22:02:58,746 - app - INFO - Processing resume: sathish_g_11 (13).pdf
+2025-04-17 22:02:59,239 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"

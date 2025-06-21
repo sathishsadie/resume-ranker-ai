@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ranked Resumes</title>
+</head>
+<body>
+    <h1>Ranked Resumes</h1>
+    <table border="1">
+        <tr>
+            <th>Filename</th>
+            <th>Score</th>
+            <th>Download Link</th>
+        </tr>
+        {% for resume in resumes %}
+        <tr>
+            <td>{{ resume.filename }}</td>
+            <td>{{ resume.score }}</td>
+            <td><a href="{{ resume.path }}" download>Download</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/">Back to Job Form</a>
+</body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter Dashboard</title>
+    <style>
+        :root {
+            --primary-color: #0073e6;
+            --secondary-color: #f5f9ff;
+            --success-color: #28a745;
+            --danger-color: #dc3545;
+            --warning-color: #ffc107;
+            --dark-color: #343a40;
+            --light-color: #f8f9fa;
+            --text-color: #333;
+            --text-light: #6c757d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f4f7fc;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1.5rem 2rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+        
+        main {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        
+        @media (min-width: 992px) {
+            main {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .panel {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            padding: 1.5rem;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+        
+        /* Form styles */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        label {
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+        
+        input, textarea, select {
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+        
+        input:focus, textarea:focus, select:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0, 115, 230, 0.2);
+        }
+        
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-top: 1rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        button:hover {
+            background-color: #005bb5;
+        }
+        
+        button:disabled {
+            background-color: #86b7e8;
+            cursor: not-allowed;
+        }
+        
+        .weights-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+        
+        .total-weight {
+            margin-top: 0.5rem;
+            text-align: right;
+            font-weight: 600;
+        }
+        
+        .total-valid {
+            color: var(--success-color);
+        }
+        
+        .total-invalid {
+            color: var(--danger-color);
+        }
+        
+        .file-input-container {
+            border: 2px dashed #ddd;
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .file-input-container:hover, .file-input-container.active {
+            border-color: var(--primary-color);
+            background-color: var(--secondary-color);
+        }
+        
+        .file-input-container p {
+            margin: 0.5rem 0;
+            color: var(--text-light);
+        }
+        
+        .file-input-container strong {
+            color: var(--primary-color);
+        }
+        
+        #file-list {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .file-item {
+            background-color: var(--secondary-color);
+            padding: 0.5rem 0.8rem;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .file-item button {
+            background-color: transparent;
+            color: var(--danger-color);
+            padding: 0;
+            margin: 0;
+            font-size: 1.2rem;
+            width: 20px;
+            height: 20px;
+        }
+        
+        /* Resumes section */
+        #resumes-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-light);
+            font-style: italic;
+            background-color: var(--light-color);
+            border-radius: 4px;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            color: var(--text-light);
+            background-color: #fff;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recruiter Dashboard</h1>
+        <p>Automate your resume screening process</p>
+    </header>
+    
+    <main>
+        <section class="panel">
+            <h2>Post New Job</h2>
+            <form id="jobForm">
+                <div class="form-group">
+                    <label for="job_title">Job Title</label>
+                    <input type="text" id="job_title" name="job_title" required placeholder="e.g. Senior Software Engineer">
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Job Description</label>
+                    <textarea id="description" name="description" required placeholder="Enter detailed job requirements..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="years_needed">Years of Experience Required</label>
+                    <input type="number" id="years_needed" name="years_needed" required min="0" step="1" placeholder="e.g. 3">
+                </div>
+                
+                <div class="form-group">
+                    <label>Scoring Weights (total must be 100%)</label>
+                    <div class="weights-container">
+                        <div class="form-group">
+                            <label for="weight_quality">CV Quality</label>
+                            <input type="number" id="weight_quality" name="weight_quality" required min="0" max="100" value="25">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="weight_experience">Relevant Experience</label>
+                            <input type="number" id="weight_experience" name="weight_experience" required min="0" max="100" value="25">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="weight_years">Years of Experience</label>
+                            <input type="number" id="weight_years" name="weight_years" required min="0" max="100" value="25">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="weight_location">Location</label>
+                            <input type="number" id="weight_location" name="weight_location" required min="0" max="100" value="25">
+                        </div>
+                    </div>
+                    <div class="total-weight total-valid">Total: 100%</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="resumes">Upload Resumes (PDF)</label>
+                    <div class="file-input-container" id="file-drop-area">
+                        <input type="file" id="resumes" name="resumes" multiple accept=".pdf" style="display:none">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        <p>Drag &amp; drop PDF files here or <strong>click to browse</strong></p>
+                        <p class="small">Maximum 10MB per file</p>
+                    </div>
+                    <div id="file-list"></div>
+                </div>
+                
+                <button type="submit">Post Job</button>
+            </form>
+        </section>
+        
+        <section class="panel">
+            <h2>Resume Screening Results</h2>
+            <div id="resumes-container">
+                <div class="empty-state">No resumes found</div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Recruiter Dashboard - Powered by Ollama and FastAPI</p>
+    </footer>
+
+    <script>
+        // File input enhancement
+        const fileDropArea = document.getElementById('file-drop-area');
+        const fileInput = document.getElementById('resumes');
+        const fileList = document.getElementById('file-list');
+        
+        // Weight calculation
+        const weightInputs = document.querySelectorAll('[name^="weight_"]');
+        const totalWeightDisplay = document.querySelector('.total-weight');
+        
+        function updateTotalWeight() {
+            const total = Array.from(weightInputs).reduce((sum, input) => sum + (parseInt(input.value) || 0), 0);
+            totalWeightDisplay.textContent = `Total: ${total}%`;
+            
+            if (total === 100) {
+                totalWeightDisplay.className = 'total-weight total-valid';
+            } else {
+                totalWeightDisplay.className = 'total-weight total-invalid';
+            }
+        }
+        
+        weightInputs.forEach(input => {
+            input.addEventListener('input', updateTotalWeight);
+        });
+        
+        // File drop functionality
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            fileDropArea.addEventListener(eventName, preventDefaults, false);
+        });
+        
+        function preventDefaults(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+        
+        ['dragenter', 'dragover'].forEach(eventName => {
+            fileDropArea.addEventListener(eventName, highlight, false);
+        });
+        
+        ['dragleave', 'drop'].forEach(eventName => {
+            fileDropArea.addEventListener(eventName, unhighlight, false);
+        });
+        
+        function highlight() {
+            fileDropArea.classList.add('active');
+        }
+        
+        function unhighlight() {
+            fileDropArea.classList.remove('active');
+        }
+        
+        fileDropArea.addEventListener('drop', handleDrop, false);
+        
+        function handleDrop(e) {
+            const dt = e.dataTransfer;
+            const files = dt.files;
+            fileInput.files = files;
+            updateFileList();
+        }
+        
+        fileDropArea.addEventListener('click', () => {
+            fileInput.click();
+        });
+        
+        fileInput.addEventListener('change', updateFileList);
+        
+        function updateFileList() {
+            fileList.innerHTML = '';
+            
+            if (fileInput.files.length > 0) {
+                Array.from(fileInput.files).forEach((file, index) => {
+                    const fileItem = document.createElement('div');
+                    fileItem.className = 'file-item';
+                    
+                    const fileName = document.createElement('span');
+                    fileName.textContent = file.name;
+                    
+                    fileItem.appendChild(fileName);
+                    fileList.appendChild(fileItem);
+                });
+            }
+        }
+    </script>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
